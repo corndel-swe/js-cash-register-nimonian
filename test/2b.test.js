@@ -1,6 +1,6 @@
 import { describe, it } from 'mocha'
 import assert from 'assert'
-import listTitles from '../exercises/2b.js'
+import listNames from '../exercises/2b.js'
 
 // Sample array of recipes for testing
 const recipes = [
@@ -21,12 +21,12 @@ const recipes = [
 describe('listTitles', function () {
   it('returns the correct titles for the given recipes', function () {
     const expectedTitles = ['Spaghetti Bolognese', 'Vegetable Stir Fry']
-    assert.deepStrictEqual(listTitles(recipes), expectedTitles)
+    assert.deepStrictEqual(listNames(recipes), expectedTitles)
   })
 
   it('returns an empty array when there are no recipes', function () {
     const emptyRecipes = []
-    assert.deepStrictEqual(listTitles(emptyRecipes), [])
+    assert.deepStrictEqual(listNames(emptyRecipes), [])
   })
 
   it('returns the correct titles when there is one recipe', function () {
@@ -39,7 +39,7 @@ describe('listTitles', function () {
       }
     ]
     const expectedTitles = ['Pancakes']
-    assert.deepStrictEqual(listTitles(oneRecipe), expectedTitles)
+    assert.deepStrictEqual(listNames(oneRecipe), expectedTitles)
   })
 
   it('handles recipes with different properties', function () {
@@ -64,6 +64,6 @@ describe('listTitles', function () {
       }
     ]
     const expectedTitles = ['Salad', 'Steak', 'Soup']
-    assert.deepStrictEqual(listTitles(variedRecipes), expectedTitles)
+    assert.deepStrictEqual(listNames(variedRecipes), expectedTitles)
   })
 })
