@@ -2,7 +2,7 @@
  * Given a recipeBook containing recipes, returns the title of the last recipe
  * in the array
  */
-function lastRecipe() {
+function lastRecipe(recipeBook) {
   // code here
 }
 
