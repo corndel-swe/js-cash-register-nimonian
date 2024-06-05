@@ -33,3 +33,5 @@ A few things you should know:
 
 - Just make sure to remove the `console.log` before you test, commit, push!
   Don't want to leave a bunch of logs clogging up the place :wood:
+
+If you're happy with all this, open up `TODO.md` and have fun!
