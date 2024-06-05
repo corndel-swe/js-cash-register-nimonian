@@ -1,7 +1,7 @@
 /**
  * Given a recipeBook containing recipes, returns the total number of servings in the book
  */
-function countServings() {
+function countServings(recipeBook) {
   // code here
 }
 
