@@ -76,9 +76,4 @@ flowchart TD
 
 ## Workshop
 
-> [!NOTE]
->
-> You can test the functions using `npm run test:level-1` and similar.
-
-Check out [drawer.js](./drawer.js) to see the data structure you will be dealing
-with.
+Head to `CONTRIBUTING.md` to find out how to contribute to this project!

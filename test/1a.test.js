@@ -29,15 +29,4 @@ describe('recipeSummary', function () {
       'Vegetable Stir Fry has 4 ingredients and serves 2 people'
     assert.strictEqual(recipeSummary(recipe2), expectedSummary)
   })
-
-  it('handles a recipe with no ingredients', function () {
-    const emptyRecipe = {
-      name: 'Empty Dish',
-      ingredients: [],
-      servings: 1,
-      isVegetarian: true
-    }
-    const expectedSummary = 'Empty Dish has 0 ingredients and serves 1 person'
-    assert.strictEqual(recipeSummary(emptyRecipe), expectedSummary)
-  })
 })

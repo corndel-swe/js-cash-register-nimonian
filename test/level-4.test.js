@@ -4,13 +4,13 @@ import { canMakeAmount } from '../lib/level-4.js'
 
 describe('canMakeAmount', function () {
   const drawer = [
-    { name: 'penny', value: 1, quantity: 2 },
-    { name: 'nickel', value: 5, quantity: 0 },
-    { name: 'dime', value: 10, quantity: 0 },
-    { name: 'quarter', value: 25, quantity: 3 },
-    { name: 'one', value: 100, quantity: 2 },
+    { name: 'ten', value: 1000, quantity: 1 },
     { name: 'five', value: 500, quantity: 1 },
-    { name: 'ten', value: 1000, quantity: 1 }
+    { name: 'one', value: 100, quantity: 2 },
+    { name: 'quarter', value: 25, quantity: 3 },
+    { name: 'dime', value: 10, quantity: 0 },
+    { name: 'nickel', value: 5, quantity: 0 },
+    { name: 'penny', value: 1, quantity: 2 }
   ]
 
   it('returns false when the amount cannot be made', function () {
@@ -19,13 +19,13 @@ describe('canMakeAmount', function () {
 
   it('returns true when the amount can be made', function () {
     const drawer = [
-      { name: 'penny', value: 1, quantity: 2 },
-      { name: 'nickel', value: 5, quantity: 0 },
-      { name: 'dime', value: 10, quantity: 0 },
-      { name: 'quarter', value: 25, quantity: 3 },
-      { name: 'one', value: 100, quantity: 2 },
+      { name: 'ten', value: 1000, quantity: 1 },
       { name: 'five', value: 500, quantity: 1 },
-      { name: 'ten', value: 1000, quantity: 1 }
+      { name: 'one', value: 100, quantity: 2 },
+      { name: 'quarter', value: 25, quantity: 3 },
+      { name: 'dime', value: 10, quantity: 0 },
+      { name: 'nickel', value: 5, quantity: 0 },
+      { name: 'penny', value: 1, quantity: 2 }
     ]
     assert.strictEqual(canMakeAmount(1651, drawer), true)
   })

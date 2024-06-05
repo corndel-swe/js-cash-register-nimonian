@@ -1,8 +1,14 @@
 /**
  * Given a recipeBook containing recipes, returns the total number of servings in the book
  */
-function countServings() {
-  // code here
+function countServings(recipeBook) {
+  let result = 0
+
+  for (let recipe of recipeBook.recipes) {
+    result += recipe.servings
+  }
+
+  return result
 }
 
 // we've provided a sample object for debugging:

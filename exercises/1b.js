@@ -4,12 +4,14 @@
  * e.g. renameBook(recipeBook, "Good eats") => { title: 'Good eats' }
  */
 function renameBook(recipeBook, newName) {
-  // code here
+  recipeBook.title = newName
+  return recipeBook
 }
 
 // we've provided a sample object for debugging:
 const recipeBook = {
-  title: 'My Recipe Book'
+  title: 'My Recipe Book',
+  recipes: []
 }
 
 // don't change below

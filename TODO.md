@@ -1,5 +1,9 @@
 # Todo
 
+> [!NOTE]
+>
+> You can test the functions using `npm run test:level-1` and similar.
+
 ## Priority
 
 ### Level 1

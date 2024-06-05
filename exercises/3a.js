@@ -2,8 +2,14 @@
  * Given a recipeBook containing recipes, returns the title of the last recipe
  * in the array
  */
-function lastRecipe() {
-  // code here
+function lastRecipe(recipeBook) {
+  const recipes = recipeBook.recipes
+
+  if (recipes.length === 0) {
+    return undefined
+  }
+
+  return recipes[recipes.length - 1].name
 }
 
 // we've provided a sample object for debugging:
