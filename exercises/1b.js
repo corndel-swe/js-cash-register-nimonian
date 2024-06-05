@@ -9,7 +9,8 @@ function renameBook(recipeBook, newName) {
 
 // we've provided a sample object for debugging:
 const recipeBook = {
-  title: 'My Recipe Book'
+  title: 'My Recipe Book',
+  recipes: []
 }
 
 // don't change below

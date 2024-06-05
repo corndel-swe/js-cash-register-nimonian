@@ -1,8 +1,8 @@
 /**
  * Given an array of recipes, return a new array of strings containing
- * the title of each recipe
+ * the name of each recipe
  */
-function listTitles(recipes) {
+function listNames(recipes) {
   // code here
 }
 
@@ -24,4 +24,4 @@ const recipes = [
 ]
 
 // don't change below
-export default listTitles
+export default listNames
